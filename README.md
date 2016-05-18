@@ -14,11 +14,15 @@ You will need unix platform for this to work
 
 # Usage 
 
-    use diversen\bgJob;
-    $bg = new bgJob();
-    $bg->execute($command, $output_file, $pid_file);
+~~~php
+<?php
 
-# Example 
+include_once "bgJob.php";
+use diversen\bgJob;
+$bg = new bgJob();
+$command = "./example.sh";
+$bg->execute($command, "output.txt", "pid.txt");
+~~~
 
-    See `example.php` which executes `example.sh` 
+
 
