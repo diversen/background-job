@@ -2,7 +2,7 @@
     "name": "diversen/background-job",
     "description": "Simple background job creator",
     "homepage": "https://github.com/diversen/background-job",
-    "keywords": ["background, job, exec"],
+    "keywords": ["background", "job", "exec"],
     "license": "MIT",
     "authors": [
         {
