@@ -18,5 +18,7 @@ You will need unix platform for this to work
     $bg = new bgJob();
     $bg->execute($command, $output_file, $pid_file);
 
+# Example 
 
+    See `example.php` which executes `example.sh` 
 

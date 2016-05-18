@@ -1,5 +1,8 @@
 <?php
 
-    use diversen\bgJob;
-    $bg = new bgJob();
-    $bg->execute($command, $output_file, $pid_file);
+include_once "bgJob.php";
+use diversen\bgJob;
+
+$bg = new bgJob();
+$command = "./example.sh";
+$bg->execute($command, "output.txt", "pid.txt");
