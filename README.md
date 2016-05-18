@@ -1,8 +1,8 @@
 # background-job
 
-Class that executes background jobs. 
+PHP class that executes background jobs (in a very simple way). 
 
-Used this answer to the question found on stackoverflow.com
+Used this answer found on stackoverflow.com:
 
 [http://stackoverflow.com/a/45966/464549](http://stackoverflow.com/a/45966/464549)
 
