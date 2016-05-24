@@ -26,6 +26,9 @@ use diversen\bgJob;
 $bg = new bgJob();
 $command = "./example.sh";
 $bg->execute($command, "output.txt", "pid.txt");
+
+// View pid
+echo $bg->pid . "\n";
 ~~~
 
 This executes `example.sh`: 

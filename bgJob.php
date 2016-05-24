@@ -22,12 +22,16 @@ class bgJob {
      * @return boolean $res true on success and false on failure
      */
     public function execute ($cmd, $outputfile, $pidfile) {
-        $res = exec(sprintf("%s > %s 2>&1 & echo $! >> %s", $cmd, $outputfile, $pidfile));
+        $res = exec(sprintf("%s > %s 2>&1 & echo $! > %s", $cmd, $outputfile, $pidfile));
         if (!$res) {
+            $this->pid = trim(file_get_contents($pidfile));
             return true;
         }
         return false;
     }
+    
+    
+    public $pid = 0;
     
     /**
      * Check if a background process is running. 
